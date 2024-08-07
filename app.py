@@ -4,7 +4,7 @@ import base64
 
 
 
-BOT_TOKEN = '7255568673:AAGyTRIQD4tlmljjCYp-AgTUWlsEX9kqC1w'
+BOT_TOKEN = '7087560091:AAFRq5CQx2o1YAEYeLw2DCQwkrb6mbDei4k'
 bot = telebot.TeleBot(BOT_TOKEN)
 
 user_data_dict = {}
@@ -119,7 +119,7 @@ def show_developer_info(message):
 
     encoded_name = "bWV6YWNoZWU="
     decoded_name = base64.b64decode(encoded_name).decode('utf-8')
-    bot.send_message(message.chat.id, f"💡 تم تطوير هذا البوت من قبل: {decoded_name}\nللتواصل: https://t.me/{decoded_name}")
+    bot.send_message(message.chat.id, f"💡 تم تطوير هذا البوت من قبل: {aziz}\nللتواصل: https://t.me/{aziz_plug}")
 
 @bot.message_handler(commands=['developer'])
 def developer(message):
